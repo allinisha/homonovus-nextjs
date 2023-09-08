@@ -35,7 +35,7 @@ const suitColorMap = {
 
 const hiddenCard = ['自罚半杯', '指定某人开始'];
 
-export default () => {
+const poker = () => {
 	const [matrixCards, setMatrixCards] = useState([]);
 	const [frontCards, setFrontCards] = useState({
 		jack: 0,
@@ -196,9 +196,9 @@ export default () => {
 		<div className="p-4 w-[100vw] h-[100vh] flex justify-center">
 			<div className="w-[100%] pb-[7rem] flex flex-col justify-around">
 				{matrixCards.map((matrixCard, i) => (
-					<div className="flex flex-row justify-around items-center space-x-2">
-						{matrixCard.map(item => {
-							return <CardItem item={item} index={i} />;
+					<div className="flex flex-row justify-around items-center space-x-2" key={i}>
+						{matrixCard.map((item, index) => {
+							return <CardItem item={item} index={i} key={index} />;
 						})}
 					</div>
 				))}
@@ -248,3 +248,5 @@ export default () => {
 		</div>
 	);
 };
+
+export default poker;
