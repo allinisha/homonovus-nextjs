@@ -194,7 +194,7 @@ const poker = () => {
 
 	return (
 		<div className="p-4 w-[100vw] h-[100vh] flex justify-center">
-			<div className="w-[100%] pb-[7rem] flex flex-col justify-around">
+			<div className="w-[100%] pb-[7rem] flex flex-col justify-around relative">
 				{matrixCards.map((matrixCard, i) => (
 					<div className="flex flex-row justify-around items-center space-x-2" key={i}>
 						{matrixCard.map((item, index) => {
@@ -202,10 +202,18 @@ const poker = () => {
 						})}
 					</div>
 				))}
+				{end && (
+					<div
+						className="absolute left-[50%] top-[50%] bg-[#6f32ff] -ml-[4rem] -mt-[2rem] w-[8rem] h-[4rem] flex justify-center items-center tracking-widest text-center rounded-[1.6rem] text-[1.4rem] text-[#fff] bg-indigo-500 shadow-lg shadow-indigo-500/50"
+						onClick={start}
+					>
+						发牌
+					</div>
+				)}
 			</div>
-			<div className="flex flex-row justify-around items-center fixed bottom-[5.6rem] left-[1rem] right-[1rem]">
+			<div className="flex flex-row justify-around items-center fixed bottom-[5.4rem] left-[1rem] right-[1rem]">
 				<span
-					className={`w-[4.8rem] py-[0.5rem] text-center text-[#4975ee] border-[#4975ee] rounded-[1.2rem] border border-[#4975ee] cursor-pointer ${
+					className={`w-[4.8rem] py-[0.2rem] text-center text-[#4975ee] border-[#4975ee] rounded-[1.2rem] border border-[#4975ee] cursor-pointer ${
 						historyStack.length !== 0 && pointer >= 0 ? 'opacity-100' : 'opacity-40'
 					}`}
 					onClick={() => {
@@ -215,7 +223,7 @@ const poker = () => {
 					上一步
 				</span>
 				<span
-					className={`w-[4.8rem] py-[0.5rem] text-center text-[#4975ee] border-[#4975ee] rounded-[1.2rem] border border-[#4975ee] cursor-pointer ${
+					className={`w-[4.8rem] py-[0.2rem] text-center text-[#4975ee] border-[#4975ee] rounded-[1.2rem] border border-[#4975ee] cursor-pointer ${
 						historyStack.length !== 0 && pointer < historyStack.length - 1 ? 'opacity-100' : 'opacity-40'
 					}`}
 					onClick={() => {
@@ -237,14 +245,6 @@ const poker = () => {
 					);
 				})}
 			</ul>
-			{end && (
-				<div
-					className="fixed left-[50%] top-[50%] bg-[#6f32ff] -ml-[4rem] -mt-[2rem] w-[8rem] h-[4rem] leading-[4rem] tracking-widest text-center rounded-[1.6rem] text-[1.4rem] text-[#fff] bg-indigo-500 shadow-lg shadow-indigo-500/50"
-					onClick={start}
-				>
-					发牌
-				</div>
-			)}
 		</div>
 	);
 };
