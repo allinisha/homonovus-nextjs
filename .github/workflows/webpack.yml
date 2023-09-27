@@ -24,6 +24,7 @@ jobs:
 
     - name: Build
       run: |
+        nvm use v16.13.0
         yarn
         yarn build
         pm2 reload homonovus
