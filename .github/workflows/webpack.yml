@@ -24,6 +24,8 @@ jobs:
 
     - name: Build
       run: |
+        export NVM_DIR=~/.nvm
+        source ~/.nvm/nvm.sh
         nvm use v16.13.0
         yarn
         yarn build
