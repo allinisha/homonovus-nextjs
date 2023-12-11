@@ -9,6 +9,9 @@ const course = () => {
     "beginner-programs": {
       name: "初级课程",
     },
+    "5-minute-yoga-tools": {
+      name: "五分钟瑜伽工具",
+    },
   };
   const allCourse = [
     {
@@ -35,11 +38,6 @@ const course = () => {
       englishName: "Yoga Namaskar",
       tags: ["beginner-programs"],
     },
-    // {
-    //   id: "5-minute-yoga-tools",
-    //   name: "五分钟瑜伽工具",
-    //   englishName: "5 Minute Yoga Tools",
-    // },
     {
       id: "upa-yoga",
       name: "Upa瑜伽",
@@ -63,6 +61,42 @@ const course = () => {
       name: "安伽玛达那",
       englishName: "Angamardana",
       tags: ["beginner-programs", "hatha-yoga"],
+    },
+    {
+      id: "5-minutes-for-health",
+      name: "五分钟健康瑜伽",
+      englishName: "5 minutes for Health",
+      tags: ["5-minute-yoga-tools"],
+    },
+    {
+      id: "5-minutes-for-peace",
+      name: "五分钟平和瑜伽",
+      englishName: "5 minutes for Peace",
+      tags: ["5-minute-yoga-tools"],
+    },
+    {
+      id: "5-minutes-for-love",
+      name: "五分钟爱之瑜伽",
+      englishName: "5 Minutes for Love",
+      tags: ["5-minute-yoga-tools"],
+    },
+    {
+      id: "5-minutes-for-success",
+      name: "五分钟成功瑜伽",
+      englishName: "5 Minutes for Success",
+      tags: ["5-minute-yoga-tools"],
+    },
+    {
+      id: "5-minutes-for-joy",
+      name: "五分钟喜悦瑜伽",
+      englishName: "5 Minutes for Joy",
+      tags: ["5-minute-yoga-tools"],
+    },
+    {
+      id: "5-minutes-for-inner-exploration",
+      name: "五分钟内在探索瑜伽",
+      englishName: "5 Minutes For Inner Exploration",
+      tags: ["5-minute-yoga-tools"],
     },
     // {
     //   id: 10,
@@ -89,7 +123,7 @@ const course = () => {
         <div className="flex mt-[1rem] flex-wrap space-x-2">
           {tags.map((tag) => (
             <span
-              className="text-[0.75rem] px-[4px] py-[2px] text-[#999] rounded-md border border-[#999]"
+              className="text-[0.75rem] px-[4px] py-[2px] bg-[#bababa24] text-[#bababa] rounded-md"
               onClick={(e) => handleTagClick(e, tag)}
             >
               {tagDict[tag].name}

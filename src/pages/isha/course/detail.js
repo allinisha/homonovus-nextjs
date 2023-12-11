@@ -18,12 +18,51 @@ const detail = () => {
         "实现内心的平静喜悦和满足",
       ],
     },
+    "5-minutes-for-health": {
+      name: "五分钟健康瑜伽",
+      englishName: "5 minutes for Health",
+      introduce: `<p>在这个充斥着快节奏生活方式，案头工作和环境污染的世界中，健康似乎遥不可及。在这个视频中，萨古鲁将从瑜伽的独特视角来看待健康。只需留意一些简单的基本要素，你便能保证自己的健康。</p><div class="flex justify-center mt-[1rem]"><iframe src="//player.bilibili.com/player.html?aid=248414511&bvid=BV16v411V7Jw&cid=348173088&p=1"  width="400" height=200 allowfullscreen="true"></iframe></div>`,
+      courseVideo: `<iframe src="//player.bilibili.com/player.html?aid=760879782&bvid=BV1664y1k7HT&cid=348226730&p=1"  width="400" height=200 allowfullscreen="true" allowfullscreen="true"> </iframe>`,
+    },
+    "5-minutes-for-peace": {
+      name: "五分钟平和瑜伽",
+      englishName: "5 Minutes For Peace",
+      introduce: `<p>你在寻求平静么？是时候停止追寻，开始掌控了！这里有个能在你之内创造平静的化学物质的方法。从每天花上几分钟开始，逐渐摆脱你的束缚，你会看到，平静，就在此时，此地。</p><div class="flex justify-center mt-[1rem]"><iframe src="//player.bilibili.com/player.html?aid=375894308&bvid=BV1Eo4y1278V&cid=349739156&p=1"  width="400" height=200 allowfullscreen="true"></iframe></div>`,
+      courseVideo: `<iframe src="//player.bilibili.com/player.html?aid=503496584&bvid=BV14g411G7qA&cid=349742495&p=1"  width="400" height=200 allowfullscreen="true" allowfullscreen="true"></iframe>`,
+    },
+    "5-minutes-for-love": {
+      name: "五分钟爱之瑜伽",
+      englishName: "5 Minutes for Love",
+      introduce: `<p>在每一段关系中，你都体验过片刻的真爱，但那些时刻是否来了又走？如果你能够永远保持爱的品质，那又将会怎样？萨古鲁解读了爱的本质，并揭示如何能通过每天仅五分钟的练习，让爱成为你生命的常态。</p><div class="flex justify-center mt-[1rem]"><iframe src="//player.bilibili.com/player.html?aid=756280713&bvid=BV17r4y1M7Gp&cid=285221473&p=1" width="400" height=200 allowfullscreen="true"></iframe></div>`,
+      courseVideo: `<iframe src="//player.bilibili.com/player.html?aid=971322066&bvid=BV1yp4y1W7oU&cid=285224634&p=1"  width="400" height=200 allowfullscreen="true" allowfullscreen="true"></iframe>`,
+    },
+
+    "5-minutes-for-joy": {
+      name: "五分钟喜悦瑜伽",
+      englishName: "5 Minutes for Joy",
+      introduce: `<p>你能说你时时刻刻都充满着喜悦么？你或许觉得那些说可以的人，不是怪胎就是在骗人，对么？不是的。有种方法能让喜悦时刻伴随你。有时候你所需要做的只是退后一步，换个视角。详情请看视频！</p><div class="flex justify-center mt-[1rem]"><iframe src="//player.bilibili.com/player.html?aid=846231816&bvid=BV1K54y1H7YX&cid=355519891&p=1"  width="400" height=200 allowfullscreen="true"></iframe></div>`,
+      courseVideo: `<iframe src="//player.bilibili.com/player.html?aid=204054806&bvid=BV18h411C7WJ&cid=292742493&p=1"  width="400" height=200 allowfullscreen="true" allowfullscreen="true"></iframe>`,
+    },
+    "5-minutes-for-success": {
+      name: "五分钟成功瑜伽",
+      englishName: "5 Minutes for Success",
+      introduce: `<p>你在生活中有多成功最终取决于你能多有效地使用你的头脑和身体。萨古鲁在这里指出了一些你应该在身心层面培养的基本品质。他提供了一项五分钟的每日练习，可使头脑日益清晰。试试看吧！</p><div class="flex justify-center mt-[1rem]"><iframe src="//player.bilibili.com/player.html?aid=546141687&bvid=BV1Kq4y1L7q9&cid=354575003&p=1"  width="400" height=200 allowfullscreen="true"></iframe></div>`,
+      courseVideo: `<iframe src="//player.bilibili.com/player.html?aid=546186343&bvid=BV18q4y1L7C1&cid=354608161&p=1"  width="400" height=200 allowfullscreen="true" allowfullscreen="true"></iframe>`,
+    },
+    "5-minutes-for-inner-exploration": {
+      name: "五分钟内在探索瑜伽",
+      englishName: "5 Minutes For Inner Exploration",
+      introduce: `<p>你是否曾疑惑过生命中有没有超越身体和头脑的维度？为了触及这些维度，我们需要净化造就我们的五大元素——土，水，火，风和空。瑜伽即是达成这个目标的技术。</p><div class="flex justify-center mt-[1rem]"><iframe src="//player.bilibili.com/player.html?aid=546318543&bvid=BV1Vq4y1s79s&cid=358379896&p=1"  width="400" height=200 allowfullscreen="true"></iframe></div>`,
+      courseVideo: `<iframe src="//player.bilibili.com/player.html?aid=631367763&bvid=BV1vb4y1C71s&cid=358386951&p=1"  width="400" height=200 allowfullscreen="true" allowfullscreen="true"> </iframe>`,
+    },
     "isha-kriya": {
-      name: "苏利亚克里亚",
+      name: "Isha Kriya冥想",
       englishName: "Isha Kriya",
       introduce:
         "<p>Isha Kriya 是一个简单而有效的过程，植根于瑜伽科学的永恒智慧。由萨古鲁提供，它有潜力改变任何愿意每天投资12分钟的人的生活。</p><p>Isha Kriya 的目的是帮助一个人接触到自己存在的源头，按照自己的愿望和愿景创造生活。每日练习 Isha Kriya 有助于带来健康、活力、平和与幸福。它是应对现代生活繁忙节奏的有力工具。</p><p>今天，对大多数人来说，“瑜伽”这个词通常会让人想到把身体扭成各种不可能的姿势的画面。瑜伽的身体层面只是这个多维科学的一个方面。瑜伽是一种技术，能让身体和头脑达到它们能力的顶峰，让人活出生命的极致。</p><p>为每个人提供“一滴灵性”是萨古鲁的愿景。通过 Isha Kriya 引导冥想，现在每个人都可以舒适地在自己家中获得灵性过程所带来的可能性。</p>",
       benefits: ["发展头脑清晰度与专注力", "培养头脑稳定性", "创造平和与幸福"],
+      practiceGuide: `<h2>准备</h2><ul><li>面向东方，双腿交叉而坐，脊柱舒适直立。</li><li>双手放在大腿上，掌心朝上。</li><li>脸微微上仰，闭上眼睛，注意力轻柔地停留在双眉之间。</li></ul><h2>冥想</h2><h3>阶段一</h3><ul><li>轻柔而缓慢地吸气和呼气。</li><li>每次吸气时，心里默念 ：“ 我不是身体（I am not the body）” 。吸气的时长应该和这个念头持续的时长相等。</li><li>每次呼气时，心里默念：“ 我也不是头脑（I am not even the mind）” 。呼气的时长应该和这个念头持 续的时长相等。</li><li>如此重复7至11分钟。</li></ul><img src="/assets/images/isha-kriya-1.png"><h3>阶段二</h3><ul><li>发长音“啊”7次，每次发音都要完全地呼气。</li><li>这个声音应该发自肚脐往下一点的 位置。</li><li>发音无需很响，但要响到足以感觉到声音的振动。</li></ul><h3>阶段三</h3><ul><li>脸微微上仰，注意力轻柔地停留在双眉之间，这样坐5至 6分钟。</li><li>这个练习的总时长在12至18分钟之间。如果愿意，你可以坐久一些。</li></ul><h2>请注意</h2><p>当你坐下来练习Isha Kriya时，不要去注意头脑或身体的活动。无论在你的身体或头脑中发生了什么，就只是忽略它，单纯地坐在那里。</p><p>中途不要停顿，因为这会扰乱练习过程中发生的能量重组。</p><ul><li>如果你每次至少做12分钟，这个kriya 将产生最大的效益。</li><li>前48天每天做两次（这被认为是一个完整的mandala或周期），之后每天至少做一次。</li></ul><p>你可以在一天中的任何时间提醒自己“ 我不是身体，我也不是头脑（I am not the body. I am not even the mind）”。</p><p>中途不要停顿，因为这会扰乱练习过程中发生的能量重组。</p>`,
+      courseVideo: `<iframe src="//player.bilibili.com/player.html?aid=931487561&bvid=BV1fM4y1T7LS&cid=570321740&p=1" width="400" height=200 allowFullScreen="true"></iframe>`,
     },
     "simha-kriya": {
       name: "健康呼吸瑜伽",
@@ -48,6 +87,7 @@ const detail = () => {
         "强健下背部肌肉",
         "避免年龄增长带来的脊柱塌陷为整个身体带来全方位的益处",
       ],
+      courseVideo: `<iframe src='//player.bilibili.com/player.html?bvid=BV1Xr4y1c7vD&cid=247866627&p=1&share_source=copy_web' width="400" height=200 allowFullScreen="true"></iframe>`,
     },
     "5-minute-yoga-tools": {
       name: "五分钟瑜伽工具",
@@ -119,10 +159,14 @@ const detail = () => {
     },
   };
 
+  const renderTitle = (title) => (
+    <h2 className="text-[1.2rem] mb-[0.4rem] text-[#1c3cab]">{title}</h2>
+  );
+
   const renderBenefits = (benefits) => {
     return (
-      <>
-        <h2 className="text-[1.2rem] mb-[0.4rem] text-[#1c3cab]">课程益处</h2>
+      <div className="mb-[2rem]">
+        {renderTitle("课程益处")}
         <ul className="leading-9">
           {benefits.map((benefit) => (
             <li className="mb-[0.8rem] leading-6 text-[#333]">
@@ -130,25 +174,67 @@ const detail = () => {
             </li>
           ))}
         </ul>
-      </>
+      </div>
+    );
+  };
+
+  const renderIntroduce = (introduce) => {
+    return (
+      <div className="mb-[2rem]">
+        {renderTitle("课程介绍")}
+        <div
+          className="whitespace-pre-wrap leading-7 text-[1rem] text-[#333]"
+          dangerouslySetInnerHTML={{ __html: introduce }}
+        ></div>
+      </div>
+    );
+  };
+
+  const renderCourseVideo = (courseVideo) => {
+    return (
+      <div className="mb-[2rem]">
+        {renderTitle("课程视频")}
+        <div
+          className="flex justify-center mt-[1rem]"
+          dangerouslySetInnerHTML={{ __html: courseVideo }}
+        ></div>
+      </div>
+    );
+  };
+
+  const renderPracticeGuide = (practiceGuide) => {
+    return (
+      <div className="mb-[2rem]">
+        {renderTitle("练习指引")}
+        <div
+          className="whitespace-pre-wrap leading-7 mb-[2rem] text-[1rem] text-[#333] common-html-wrap"
+          dangerouslySetInnerHTML={{ __html: practiceGuide }}
+        ></div>
+      </div>
     );
   };
 
   const renderDetail = () => {
     const detailData = allCourseDict[id];
-    const { name, englishName, introduce, benefits = [] } = detailData;
+    const {
+      name,
+      englishName,
+      introduce,
+      benefits = [],
+      practiceGuide,
+      courseVideo,
+    } = detailData;
     return (
       <div className="p-[1.4rem]">
         <div className="text-[1.8rem] text-[#1c3cab]">{name}</div>
         <div className="text-[1.4rem] text-[#fdad6a] mb-[1rem]">
           {englishName}
         </div>
-        <h2 className="text-[1.2rem] text-[#1c3cab] mb-[0.4rem]">课程介绍</h2>
-        <div
-          className="whitespace-pre-wrap leading-7 mb-[2rem] text-[1rem] text-[#333]"
-          dangerouslySetInnerHTML={{ __html: introduce }}
-        ></div>
+        {!!introduce && renderIntroduce(introduce)}
         {!!benefits.length && renderBenefits(benefits)}
+        {!!practiceGuide && renderPracticeGuide(practiceGuide)}
+        {!!courseVideo && renderCourseVideo(courseVideo)}
+        <></>
       </div>
     );
   };

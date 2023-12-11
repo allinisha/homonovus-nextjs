@@ -47,3 +47,16 @@ p {
   top: 50%;
   transform: translateY(-50%);
 }
+.common-html-wrap h2 {
+  font-weight: bold;
+}
+.common-html-wrap p {
+  margin-bottom: 0;
+}
+.common-html-wrap ul {
+  list-style: circle;
+  padding-left: 14px;
+}
+.common-html-wrap img {
+  margin: 10px auto;
+}
