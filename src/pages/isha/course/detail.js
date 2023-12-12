@@ -74,6 +74,7 @@ const detail = () => {
         "增强免疫力",
         `提升 Samath Prana（太阳热能）这能为你自己建立一个盔甲或 Kavacham 去抵御负面影响这能为你自己建立一个盔甲或Kavacham去抵御负面影响`,
       ],
+      courseVideo: `<iframe src="//player.bilibili.com/player.html?aid=755024578&bvid=BV1Xr4y1c7vD&cid=247866627&p=1" width="400" height=200 allowfullscreen="true"> </iframe>`,
     },
     "yoga-namaskar": {
       id: "yoga-namaskar",

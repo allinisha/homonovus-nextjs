@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { useRouter } from "next/router";
 
 const course = () => {
@@ -5,6 +6,7 @@ const course = () => {
   const tagDict = {
     "hatha-yoga": {
       name: "哈他瑜伽",
+      hadIntro: true,
     },
     "beginner-programs": {
       name: "初级课程",
@@ -106,8 +108,9 @@ const course = () => {
 
   const handleTagClick = (e, tag) => {
     e.stopPropagation();
-    if (tag === "beginner-programs") return;
-    router.push(`/isha/course/detail?id=${tag}`);
+    if (tagDict[tag].hadIntro) {
+      router.push(`/isha/course/detail?id=${tag}`);
+    }
   };
 
   const renderCourseItem = (item, index) => {
@@ -136,6 +139,9 @@ const course = () => {
 
   return (
     <div className="container mx-auto p-[1rem] min-h-[100vh] bg-[#fcfcff]">
+      <Head>
+        <title>isha课程/"新人类"</title>
+      </Head>
       <h1 className="text-center text-[1.4rem] mb-[1.6rem] text-[#000f64]">
         Isha课程
       </h1>
