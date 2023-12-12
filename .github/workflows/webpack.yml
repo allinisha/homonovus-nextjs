@@ -1,33 +1,33 @@
-name: NodeJS with Webpack
-
+name: Actions CI - Next.js version 12 static site export, GitHub Actions Build and Deploy
 on:
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [14.x, 16.x, 18.x]
-
     steps:
-    - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
+      - name: Install dependencies
+        run: npm install
 
-    - name: Build
-      run: |
-        export NVM_DIR=~/.nvm
-        source ~/.nvm/nvm.sh
-        nvm install v16.13.0
-        nvm use v16.13.0
-        yarn
-        yarn build
-        pm2 reload homonovus
+      - name: Build Next.js app
+        run: npm run build
+
+      - name: SSH Deploy
+        # Use the 'appleboy/ssh-action' action for SSH deployment
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }} # Your server's IP address
+          username: ${{ secrets.USERNAME }} # Your server's username
+          key: ${{ secrets.SSH_PRIVATE_KEY }} # Your server's SSH private key
+          script: |
+            cd /usr/local/src/code/homonovus-nextjs # Specify the path to your app directory on the server
+            git pull
+            yarn
+            yarn build
+            pm2 restart homonovus # Replace with your PM2 service name
+
