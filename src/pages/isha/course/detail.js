@@ -78,7 +78,7 @@ const detail = () => {
     },
     "yoga-namaskar": {
       id: "yoga-namaskar",
-      name: "幸福瑜伽",
+      name: "瑜伽合十礼",
       englishName: "Yoga Namaskar",
       introduce:
         "<p>瑜伽合十礼本身就是一个十分简单且完整的过程，它可以滋养人的身体、心理和能量层面。将双手合十并拢的简单动作是为整个系统创造和谐的一种方式。瑜伽合十礼不涉及在你的生活中引入任何主要的训导，也不会有时间、饮食或生活方式方面的限制。这个简单练习不需要任何设备，几乎在任何地方都可以练习。</p>",
@@ -88,7 +88,7 @@ const detail = () => {
         "强健下背部肌肉",
         "避免年龄增长带来的脊柱塌陷为整个身体带来全方位的益处",
       ],
-      courseVideo: `<iframe src='//player.bilibili.com/player.html?bvid=BV1Xr4y1c7vD&cid=247866627&p=1&share_source=copy_web' width="400" height=200 allowFullScreen="true"></iframe>`,
+      courseVideo: `<iframe src='//player.bilibili.com/player.html?aid=246439387&aid=246439387&bvid=BV19v411Y7Xw&cid=739167909&p=1' width="400" height=200 allowFullScreen="true"></iframe>`,
     },
     "5-minute-yoga-tools": {
       name: "五分钟瑜伽工具",
@@ -107,6 +107,7 @@ const detail = () => {
         "在一段时间的不活动后恢复身体的活力",
         "消除时差和长途旅行的影响",
       ],
+      courseVideo: `<iframe src="//player.bilibili.com/player.html?aid=489718734&bvid=BV1WN411z7n7&cid=1231576159&p=1" width="400" height=200 allowfullscreen="true"> </iframe>`,
     },
     "surya-kriya": {
       name: "苏利亚克里亚",
