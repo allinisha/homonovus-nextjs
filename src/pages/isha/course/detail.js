@@ -1,4 +1,5 @@
 import { useSearchParams } from "next/navigation";
+import Head from "next/head";
 
 const detail = () => {
   const searchParams = useSearchParams();
@@ -228,6 +229,9 @@ const detail = () => {
     } = detailData;
     return (
       <div className="p-[1.4rem]">
+        <Head>
+          <title>{name}/isha课程/"新人类"</title>
+        </Head>
         <div className="text-[1.8rem] text-[#1c3cab]">{name}</div>
         <div className="text-[1.4rem] text-[#fdad6a] mb-[1rem]">
           {englishName}
