@@ -3,20 +3,60 @@
 @tailwind utilities;
 
 :root {
-	--foreground-rgb: 0, 0, 0;
-	--background-start-rgb: 214, 219, 220;
-	--background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
-	:root {
-		--foreground-rgb: 255, 255, 255;
-		--background-start-rgb: 0, 0, 0;
-		--background-end-rgb: 0, 0, 0;
-	}
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
 }
 
 body {
-	color: rgb(var(--foreground-rgb));
-	background: #202542;
+  color: rgb(var(--foreground-rgb));
+}
+p {
+  margin-bottom: 14px;
+  word-break: break-all;
+}
+
+.linear-bg {
+  background: linear-gradient(45deg, #d7deff4a, #fff1d88f);
+}
+
+.linear-bg-long {
+  background: linear-gradient(45deg, #c6d0ff63, #fff1d88f);
+}
+
+.highlight {
+  position: relative;
+  padding-left: 14px;
+}
+.highlight::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #fdad6a;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.common-html-wrap h2 {
+  font-weight: bold;
+}
+.common-html-wrap p {
+  margin-bottom: 0;
+}
+.common-html-wrap ul {
+  list-style: circle;
+  padding-left: 14px;
+}
+.common-html-wrap img {
+  margin: 10px auto;
 }
